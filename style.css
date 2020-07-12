@@ -120,7 +120,8 @@ h3 { font-size: var(--fs-h3) }
 
 .section__subtitle--intro,
 .section__subtitle--about {
-    background: var(--clr-accent);
+    /* background: var(--clr-accent); */
+    background: linear-gradient(to right, #1cd8d2, #93edc7); 
     padding: .25em .75em;
     font-family: var(--ff-secondary);
     margin-bottom: .50em;
@@ -250,7 +251,8 @@ h3 { font-size: var(--fs-h3) }
 .my-services {
     /*background-color: #3E3A39;*/
     /*background-color: #6c5ce7;*/
-    background-color: #2c2c54;
+    /* background-color: #2c2c54; */
+    background: linear-gradient(to right, #614385, #516395);
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
@@ -362,7 +364,7 @@ h3 { font-size: var(--fs-h3) }
 /* My certifications */
 
 .my-certifications{
-    background-color: #2c2c54;
+    background: linear-gradient(to right, #614385, #516395);
     color: var(--clr-light);
     text-align: center;
 }
@@ -437,11 +439,11 @@ li a:hover{
 /* Footer */
 
 .footer{
-    /*background-color: #111;*/
     display: grid;
     grid-template-rows: 2;
-    background-color: #40407a;
-    color: var(--clr-accent);
+    /* background-color: #40407a; */
+    background: linear-gradient(to right, #1cd8d2, #93edc7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: var(--clr-dark);
     text-align: center;
     padding: 2.5em 0;
 }
@@ -449,18 +451,17 @@ li a:hover{
 .CV{
     margin-bottom: 1em;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 22px;
 }
 
 .CV:hover{
     transform: scale(1.1);
-    color:#b2bec3;
+    color:#40407a;
 }
 
 .footer__link:hover {
-    /*text-decoration: underline;*/
-    color:#b2bec3;
-
+    transform: scale(1.1);
+    color:#40407a;
 }
 
 .footer a { 
@@ -469,29 +470,32 @@ li a:hover{
  }
 
  .footer__link {
-    font-size: var(--fs-h3);
+    font-size: 22px;
     font-weight: var(--fw-bold);
 }
 
  .footer__link:hover,
 .social-list__link:hover {
-    opacity: .7;
     transform: scale(1.1);
-
+    color: #40407a;
 }
-
 
 .social-list {
     list-style: none;
     display: flex;
     justify-content: center;
     margin: 2em 0 0;
-    padding: 0;
-    
+    padding: 0;  
 }
 
 .social-list__item {
     margin: 0 .5em;
+    color: var(--clr-dark));
+}
+
+.social-list__item:hover {
+    transform: scale(1.1);
+    color: #40407a;
 }
 
 .social-list__link {
