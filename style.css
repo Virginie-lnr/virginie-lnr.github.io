@@ -122,7 +122,7 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle--about {
     /* background: var(--clr-accent); */
     background: linear-gradient(to right, #1cd8d2, #93edc7); 
-    padding: .25em .75em;
+    padding: .40em .80em;
     font-family: var(--ff-secondary);
     margin-bottom: .50em;
 }
@@ -171,6 +171,30 @@ h3 { font-size: var(--fs-h3) }
     background: transparent;
     border: 0;
     cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1000;
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
 }
 
 .hamburger {
@@ -181,7 +205,7 @@ h3 { font-size: var(--fs-h3) }
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-dark);
+    background: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -199,7 +223,6 @@ h3 { font-size: var(--fs-h3) }
 
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
-
 
 
 /*  Intro section  */
