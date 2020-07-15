@@ -171,7 +171,7 @@ h3 { font-size: var(--fs-h3) }
     background: transparent;
     border: 0;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 1em;
     top: 1em;
     z-index: 1000;
@@ -187,14 +187,20 @@ h3 { font-size: var(--fs-h3) }
 
 .nav-open .hamburger {
     transform: rotate(.625turn);
+    background: var(--clr-accent);
+
 }
 
 .nav-open .hamburger::before {
     transform: rotate(90deg) translateX(-6px);
+    background: var(--clr-accent);
+
 }
 
 .nav-open .hamburger::after {
     opacity: 0;
+    background: var(--clr-accent);
+
 }
 
 .hamburger {
@@ -205,11 +211,12 @@ h3 { font-size: var(--fs-h3) }
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-accent);
     width: 2em;
     height: 3px;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
+    background: var(--clr-dark);
+
 }
 
 
