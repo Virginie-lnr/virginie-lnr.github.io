@@ -370,17 +370,17 @@ h3 {
     justify-content: center;
     margin-bottom: 1.5em;
 }
-.stack img {
+.stack img{
     margin-top: 1em;
     margin-right: .7em;
     margin-bottom: .5em;
     width: 50px;
     height: auto;
 }
-.stack img.figma {
+/* .stack img.figma {
     width: 25px;
     height: auto;
-}
+} */
 
 .text-content p{
     text-align: justify;
