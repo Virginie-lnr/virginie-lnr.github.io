@@ -558,7 +558,7 @@ li a:hover {
 .portfolio {
     display: grid;
     /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 1em;
 }
 
@@ -566,12 +566,10 @@ li a:hover {
     background: var(--clr-light);
     overflow: hidden;
     text-decoration: none;
-    
 }
 
 .portfolio__item p{
     padding: 0 1.5em;
-    
 }
 
 /* hover animation */
