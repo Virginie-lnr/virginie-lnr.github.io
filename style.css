@@ -191,8 +191,9 @@ h3 {
     font-family: var(--ff-secondary);
     margin-bottom: .50em;
 }
-.section__subtitle--certif{
-    text-align: center;
+.section__subtitle--certif > strong{
+    display: flex;
+    justify-content: center;
     color: var(--clr-light-blue);
 }
 
@@ -387,6 +388,7 @@ h3 {
     display: flex;
     justify-content: center;
     margin-bottom: 1.5em;
+    align-items: center;
 }
 .stack img{
     margin-top: 1em;
@@ -396,8 +398,8 @@ h3 {
     height: auto;
 }
 .stack img.figma {
-    width: 25px;
-    height: auto;
+    width: 35px;
+    height: 35px;
 }
 
 .text-content p{
