@@ -143,7 +143,21 @@ strong {
     color: var(--clr-dark);
     transform: scale(1.1);
 }
-
+.btn-sm {
+    display: inline-block;
+    padding: .6em 1em;
+    background: var(--clr-light-blue);
+    color: white;
+    text-decoration: none;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    margin-bottom: 1em;
+}
+.btn-sm:hover {
+    background-color: var(--clr-dark);
+}
 /* Typography */
 
 h1,
